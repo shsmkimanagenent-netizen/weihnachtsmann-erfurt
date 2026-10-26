@@ -1127,7 +1127,7 @@ body {
 
 .charity-trust-grid {
   display: grid;
-  grid-template-columns: 1.3für 0.7für;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 28px;
   align-items: center;
 }
@@ -1547,7 +1547,7 @@ body {
 
 .geo-result-grid {
   display: grid;
-  grid-template-columns: 1.2für 0.8für;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 20px;
   align-items: center;
 }
@@ -1649,7 +1649,7 @@ body {
   border-radius: var(--radius-lg);
   padding: 24px;
   display: grid;
-  grid-template-columns: 1.2für 0.8für;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 24px;
   align-items: center;
   margin-bottom: 36px;
@@ -1969,7 +1969,7 @@ body {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3für 1fr 1fr 1.2für;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
   gap: 36px;
   margin-bottom: 40px;
 }
@@ -2431,7 +2431,7 @@ body {
   overflow: hidden;
 }
 
-.slot-card.slot-füree:hover {
+.slot-card.slot-free:hover {
   transform: translateY(-3px);
   border-color: var(--color-gold);
   background: rgba(212, 175, 55, 0.08);
@@ -2493,7 +2493,7 @@ body {
   margin-top: 10px;
 }
 
-.badge-füree {
+.badge-free {
   background: rgba(16, 185, 129, 0.15);
   color: #34d399;
   border: 1px solid rgba(16, 185, 129, 0.35);
@@ -2755,6 +2755,898 @@ body {
   0% { box-shadow: 0 0 8px rgba(250, 204, 21, 0.3); }
   100% { box-shadow: 0 0 18px rgba(250, 204, 21, 0.7); }
 }
+
+
+/* ==========================================================================
+   ALLES AKKURAT IN DER MITTE (100% ZENTRIERTES LAYOUT)
+   ========================================================================== */
+
+/* 1. Global & Container Centering */
+.container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 2. Hero Section - Komplett akkurat zentriert */
+.hero-section {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.hero-section .container {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.hero-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 880px !important;
+  margin: 0 auto !important;
+  gap: 28px !important;
+}
+
+.hero-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.hero-badge {
+  margin: 0 auto 16px auto !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+}
+
+.hero-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 820px !important;
+}
+
+.hero-lead {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 760px !important;
+}
+
+/* Das Hero-Bild - Groß und perfekt in der Mitte */
+.hero-visual {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 20px auto 28px auto !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.hero-image-frame {
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  max-width: 540px !important;
+  width: 100% !important;
+}
+
+.hero-image-frame img {
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 500px !important;
+  height: auto !important;
+  border-radius: 20px !important;
+  border: 2px solid rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.3) !important;
+}
+
+.hero-floating-card {
+  position: static !important;
+  margin: 16px auto 0 auto !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+}
+
+/* Countdown & Buttons zentriert */
+.countdown-box {
+  margin: 0 auto 28px auto !important;
+  max-width: 540px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.countdown-header, .countdown-units {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.hero-actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  margin: 0 auto !important;
+}
+
+/* 3. Über uns (About Section) - Perfekt zentriert */
+.about-section {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.about-section .hero-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  max-width: 860px !important;
+}
+
+.about-section .hero-visual {
+  margin: 0 auto 28px auto !important;
+}
+
+.about-section .hero-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  max-width: 780px !important;
+}
+
+.about-section .section-title,
+.about-section .section-tag,
+.about-section .hero-lead {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.about-section .hero-content > div:nth-of-type(1) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 640px !important;
+  width: 100% !important;
+}
+
+/* 4. Alle Überschriften & Textblöcke */
+.section-header {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.section-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 740px !important;
+}
+
+.section-tag {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+}
+
+/* 5. Alle Boxen & Formulare */
+.booking-form-box,
+.booking-calendar-box,
+.price-policy-banner,
+.cinema-soundtrack-bar {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.pricing-checklist-grid {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 880px !important;
+}
+
+/* 6. Alle Bilder im Fluss zentrieren */
+img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+/* ==========================================================================
+   INTERAKTIVER LIVE-TERMINPLANER & RESERVIERUNGSPLAN 2026
+   ========================================================================== */
+
+.booking-calendar-section {
+  padding: 80px 0 60px 0;
+  background: radial-gradient(circle at 50% 20%, rgba(30, 41, 59, 0.75) 0%, rgba(7, 10, 18, 0.98) 100%);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  position: relative;
+  z-index: 10;
+}
+
+/* PayPal Vorkasse Banner */
+.paypal-vorkasse-banner {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 0 auto 28px auto;
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.2);
+  text-align: left;
+}
+
+.pvb-icon {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  flex-shrink: 0;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.pvb-content {
+  flex: 1;
+}
+
+.pvb-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-gold-light);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pvb-text {
+  font-size: 0.92rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.pvb-badge {
+  background: linear-gradient(135deg, var(--color-gold), #b8860b);
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Termin-Legende & Statusregeln */
+.calendar-legend-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  margin: 0 auto 24px auto;
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dot-free {
+  background: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+}
+
+.dot-booked {
+  background: #ef4444;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
+}
+
+.dot-partial {
+  background: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.7);
+}
+
+.dot-selected {
+  background: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
+
+.legend-notice {
+  font-size: 0.88rem;
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px dashed rgba(239, 68, 68, 0.4);
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.5;
+}
+
+/* Schnellwahltasten */
+.calendar-quick-picks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 30px auto;
+  max-width: 1050px;
+}
+
+.quick-pick-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quick-day-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.quick-day-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--color-gold);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.quick-day-btn.active {
+  background: linear-gradient(135deg, var(--color-gold), #b8860b);
+  color: #0f172a;
+  border-color: var(--color-gold-light);
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Grafische Monats-Übersicht */
+.calendar-month-overview-card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1.5px solid var(--color-gold-border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  margin: 0 auto 36px auto;
+  max-width: 1050px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.calendar-month-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.month-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+}
+
+.month-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-dim);
+}
+
+.calendar-grid-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calendar-grid-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+/* Einzelne Tages-Kachel */
+.cal-day-cell {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px 6px;
+  min-height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  text-align: center;
+}
+
+.cal-day-cell:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cal-day-cell.day-empty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cal-day-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.cal-day-event {
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.cal-day-status-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 12px;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+/* Status-Farben der Tage */
+.cal-day-cell.day-free {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.06);
+}
+.cal-day-cell.day-free:hover {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.35);
+}
+.cal-day-cell.day-free .cal-day-status-pill {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.cal-day-cell.day-partial {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(245, 158, 11, 0.08);
+}
+.cal-day-cell.day-partial:hover {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.18);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
+}
+.cal-day-cell.day-partial .cal-day-status-pill {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.cal-day-cell.day-booked {
+  border-color: rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.07);
+}
+.cal-day-cell.day-booked:hover {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.16);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.35);
+}
+.cal-day-cell.day-booked .cal-day-num {
+  color: #fca5a5;
+  text-decoration: line-through;
+}
+.cal-day-cell.day-booked .cal-day-status-pill {
+  background: rgba(239, 68, 68, 0.25);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.cal-day-cell.day-active {
+  border-color: var(--color-gold) !important;
+  background: rgba(212, 175, 55, 0.2) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6) !important;
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+/* Detail-Ansicht für ausgewählten Tag */
+.calendar-day-detail-box {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1.5px solid var(--color-gold-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 0 auto 30px auto;
+  max-width: 1050px;
+  box-shadow: var(--shadow-card);
+}
+
+.calendar-date-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stepper-btn {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--color-frost-border);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.stepper-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--color-gold);
+}
+
+.stepper-display {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.stepper-native-date {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+}
+
+.stepper-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-gold-light);
+  letter-spacing: -0.2px;
+}
+
+.stepper-sub {
+  font-size: 0.9rem;
+  color: var(--color-text-dim);
+  margin-top: 4px;
+}
+
+/* Slots Raster */
+.calendar-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.slot-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.slot-card.slot-free {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.slot-card.slot-free:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.slot-card.slot-selected {
+  border-color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4) !important;
+  transform: scale(1.02);
+}
+
+.slot-card.slot-booked {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.35);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.slot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.slot-time {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slot-card.slot-booked .slot-time {
+  color: #fca5a5;
+  text-decoration: line-through;
+}
+
+.slot-duration {
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.slot-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.badge-free {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-booked {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+}
+
+.badge-selected {
+  background: rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
+.slot-action-btn {
+  margin-top: 14px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-slot-book {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-slot-book:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45);
+}
+
+/* Auswahl-Bestätigungsbanner */
+.calendar-selection-banner {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+  border: 2px solid #34d399;
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 24px auto 0 auto;
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(52, 211, 153, 0.3);
+  text-align: left;
+}
+
+.selection-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .paypal-vorkasse-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pvb-title {
+    justify-content: center;
+  }
+  .calendar-date-stepper {
+    flex-direction: column;
+  }
+  .calendar-selection-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .selection-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .calendar-grid-weekdays {
+    font-size: 0.75rem;
+  }
+  .cal-day-cell {
+    padding: 8px 3px;
+    min-height: 70px;
+  }
+  .cal-day-num {
+    font-size: 1.05rem;
+  }
+  .cal-day-event {
+    display: none;
+  }
+  .cal-day-status-pill {
+    font-size: 0.6rem;
+    padding: 2px 4px;
+  }
+}
+
+
+/* ==========================================================================
+   5-MINUTEN-RESERVIERUNG & PAYPAL-ANZAHLUNG SYSTEM
+   ========================================================================== */
+@keyframes pulseGlowAmber {
+  0% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 10px rgba(251, 191, 36, 0.6); }
+  100% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.4); }
+}
+
+@keyframes timerAlertPulse {
+  0% { transform: scale(1); color: #fbbf24; }
+  50% { transform: scale(1.05); color: #ef4444; }
+  100% { transform: scale(1); color: #fbbf24; }
+}
+
+.hero-reservation-notice {
+  transition: all 0.3s ease;
+}
+.hero-reservation-notice:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
+}
+
+#activeReservationCountdownBox {
+  animation: pulseGlowAmber 3s infinite ease-in-out;
+}
+
+#activeReservationCountdownBox.timer-warning {
+  border-color: #ef4444 !important;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(15, 23, 42, 0.98)) !important;
+}
+
+#activeReservationCountdownBox.timer-warning #reservationTimerDisplay {
+  color: #f87171 !important;
+  animation: timerAlertPulse 1s infinite;
+}
+
+.slot-card.slot-selected {
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.5) !important;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(15, 23, 42, 0.95)) !important;
+}
+
+.paypal-confirmation-box {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98));
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
 </style>
 
   <!-- Comprehensive Multi-Entity Knowledge Graph for AI Search Engines -->
@@ -3020,7 +3912,7 @@ body {
             "name": "Wie funktioniert die Bezahlung per PayPal-Vorkasse–,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nach Bestätigung des Wunschtermins erhalten Sie die Zahlungsdaten für PayPal (sh.sm.ki.managenent@gmail.com). Mit vollständiger Zahlung per PayPal-Vorkasse ist das Zeitfenster verbindlich im Tourenplan garantiert."
+              "text": "Nach Bestätigung des Wunschtermins erhalten Sie die Zahlungsdaten für PayPal (sh.sm.ki.management@gmail.com). Mit vollständiger Zahlung per PayPal-Vorkasse ist das Zeitfenster verbindlich im Tourenplan garantiert."
             }
           },
           {
@@ -3174,6 +4066,21 @@ body {
             </script>
 
             <!-- HERO BUCHEN BUTTON -->
+                        <!-- 5-Minuten-Reservierung & Anzahlung Hinweis-Badge im Hero -->
+            <div class="hero-reservation-notice" style="margin-top: 22px; padding: 14px 20px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(15, 23, 42, 0.95)); border: 1.5px solid #f59e0b; border-radius: 12px; display: flex; align-items: center; gap: 14px; box-shadow: 0 4px 25px rgba(245, 158, 11, 0.25); text-align: left; max-width: 650px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.25); border: 1.5px solid #fbbf24; display: flex; align-items: center; justify-content: center; color: #fbbf24; font-size: 1.35rem; flex-shrink: 0;">
+                <i class="fa-solid fa-stopwatch"></i>
+              </div>
+              <div>
+                <div style="font-weight: 800; color: #fde68a; font-size: 0.96rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span>5-Minuten-Live-Reservierung &amp; 50 % Anzahlung</span>
+                  <span style="background: #f59e0b; color: #0f172a; font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px;">Garantie</span>
+                </div>
+                <div style="font-size: 0.84rem; color: #e2e8f0; margin-top: 3px; line-height: 1.45;">
+                  Wunschtermin bei Interesse anklicken &bull; <strong>exakt 5 Minuten exklusiv reserviert</strong> &bull; Nach Eingang der 50 % Anzahlung per PayPal (an <span style="color: #93c5fd;">sh.sm.ki.management@gmail.com</span>) wird der Termin verbindlich freigegeben. Erfolgt keine Zahlung in 5 Min., wird der Termin wieder freigegeben und alles beginnt von vorne.
+                </div>
+              </div>
+            </div>
             <div class="hero-actions">
               <a href="#reservierungsplan" class="btn btn-primary cta-btn-buchen">
                 <i class="fa-solid fa-calendar-check"></i> Hier buchen
@@ -3206,6 +4113,133 @@ body {
         </div>
       </div>
     </section>
+
+<section class="booking-calendar-section" id="reservierungsplan">
+      <div class="container text-center">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> Interaktiver Live-Terminplaner&copy; 2026</span>
+          <h2 class="section-title">Sichtbarer <span>Reservierungsplan</span></h2>
+          <p class="section-subtitle">
+            Hier sehen Sie in Echtzeit alle noch freien und bereits belegten Termine im Buchungszeitraum vom <strong>15.11.2026 bis 24.12.2026</strong>. 
+            T&auml;glich im festen 1,5-Stunden-Takt von <strong>10:00 Uhr bis 20:00 Uhr</strong>. Klicken Sie einfach auf einen freien Termin zur Direktbuchung!
+          </p>
+        </div>
+
+        <!-- PayPal Vorkasse Garantie-Banner -->
+                <!-- PayPal Vorkasse & 5-Minuten-Live-Reservierung Schutz-Banner -->
+        <div class="paypal-vorkasse-banner" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.97), rgba(30, 41, 59, 0.95)); border: 2px solid #f59e0b; box-shadow: 0 8px 30px rgba(0,0,0,0.5), 0 0 25px rgba(245, 158, 11, 0.25);">
+          <div class="pvb-icon" style="color: #fbbf24; font-size: 2.8rem; text-shadow: 0 0 20px rgba(245, 158, 11, 0.6);"><i class="fa-solid fa-stopwatch"></i></div>
+          <div class="pvb-content">
+            <h4 class="pvb-title" style="color: #fde68a; font-size: 1.22rem; margin-bottom: 8px;">
+              <i class="fa-solid fa-shield-halved" style="color: #34d399;"></i> 
+              5-Minuten-Live-Reservierung &amp; Bezahlung (50 % Anzahlung per PayPal)
+            </h4>
+            <p class="pvb-text" style="font-size: 0.92rem; color: #e2e8f0; line-height: 1.55;">
+              <strong>Der verbindliche Buchungsweg Schritt f&uuml;r Schritt:</strong><br>
+              &bull; <strong>1. Wunschtermin reservieren:</strong> Klicken Sie auf einen freien Zeitslot. Der Termin wird <strong>sofort f&uuml;r exakt 5 Minuten exklusiv f&uuml;r Sie gesperrt</strong>.<br>
+              &bull; <strong>2. 50 % Anzahlung per PayPal:</strong> Innerhalb des 5-Minuten-Zeitfensters leisten Sie die 50 % Anzahlung an <strong style="color: #93c5fd;">sh.sm.ki.management@gmail.com</strong>.<br>
+              &bull; <strong>3. Freigabe &amp; Best&auml;tigung:</strong> Ist das Geld eingegangen und best&auml;tigt, wird der Termin verbindlich im Tourenplan freigegeben. Automatische R&uuml;ckmeldung erfolgt an <em>sh.sm.ki.management@gmail.com</em> und an Sie.<br>
+              &bull; <strong>4. Nach 5 Minuten:</strong> Geht innerhalb von 5 Minuten keine Zahlung ein, wird der Termin automatisch wieder freigegeben &ndash; und alles beginnt von vorne.<br>
+              &bull; <strong>5. 50 % Restgage:</strong> Wird am Auftrittstag vor Ort in bar entrichtet (inkl. offizieller Quittung).
+            </p>
+          </div>
+          <div class="pvb-badge" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #0f172a; font-weight: 800; font-size: 0.9rem; padding: 10px 18px; border-radius: 20px; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.45);">
+            <i class="fa-solid fa-clock"></i> 5 Min. Schutz
+          </div>
+        </div>
+
+        <!-- Termin-Legende & Statusregeln -->
+        <div class="calendar-legend-card">
+          <div class="legend-items">
+            <div class="legend-item"><span class="legend-dot dot-free"></span> <strong>Gr&uuml;n / Gold:</strong> Freier Termin (sofort buchbar)</div>
+            <div class="legend-item"><span class="legend-dot dot-booked"></span> <strong>Rot:</strong> Bereits reserviert / belegt</div>
+            <div class="legend-item"><span class="legend-dot dot-partial"></span> <strong>Gelb:</strong> Teilweise belegt (Slots noch frei)</div>
+            <div class="legend-item"><span class="legend-dot dot-selected"></span> <strong>Blau / Cyan:</strong> Ihr ausgew&auml;hlter Termin</div>
+          </div>
+          <div class="legend-notice">
+            <i class="fa-solid fa-circle-exclamation" style="color: #f87171;"></i>
+            <span><strong>Feste Reservierungen vermerkt:</strong> 
+              Am <strong>05.12. &amp; 06.12.2026 (Nikolaus-Wochenende)</strong> ganzt&auml;gig komplett belegt &bull; 
+              Am <strong>12.12.2026</strong> ganzt&auml;gig komplett &bull; 
+              Am <strong>19.12.2026</strong> ganzt&auml;gig &bull; 
+              Am <strong>22.12.2026</strong> von 10:00 bis 13:00 Uhr belegt (Nachmittag frei) &bull; 
+              Am <strong>23.12.2026 (Vorabend Heiligabend)</strong> ganzt&auml;gig komplett belegt &bull; 
+              Am <strong>24.12.2026 (Heiligabend)</strong> ab <strong>18:30 Uhr</strong> bis zum Schluss reserviert (Vormittag &amp; Nachmittag frei!).
+            </span>
+          </div>
+        </div>
+
+        <!-- Schnellwahltasten -->
+        <div class="calendar-quick-picks">
+          <span class="quick-pick-label"><i class="fa-solid fa-bolt"></i> Schnellwahl:</span>
+          <button type="button" class="quick-day-btn active" data-date="2026-12-24">&#11088; 24.12. Heiligabend</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-22">&#128197; 22.12. Di. (10-13 Uhr belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-23">&#128197; 23.12. Mi. (Komplett belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-06">&#127877; 06.12. Nikolaus (Komplett belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-12">&#128197; 12.12. Sa. (Komplett belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-05">&#127876; 05.12. Vorabend (Komplett belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-19">&#128197; 19.12. Sa. (Komplett belegt)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-12-20">&#128367;&#65039; 4. Advent (20.12.)</button>
+          <button type="button" class="quick-day-btn" data-date="2026-11-15">&#128640; Saisonstart (15.11.)</button>
+        </div>
+
+        <!-- GRAFISCHE MONATS- / SAISON-KALENDERÜBERSICHT -->
+        <div class="calendar-month-overview-card">
+          <div class="calendar-month-header">
+            <h3 class="month-title"><i class="fa-regular fa-calendar"></i> Grafische &Uuml;bersicht: Dezember 2026 (Weihnachts-Saison)</h3>
+            <span class="month-subtitle">Klicken Sie auf einen Tag, um alle 1,5-Stunden-Zeitslots anzuzeigen</span>
+          </div>
+
+          <!-- Kalender-Wochentage-Kopfzeile -->
+          <div class="calendar-grid-weekdays">
+            <div>Mo</div><div>Di</div><div>Mi</div><div>Do</div><div>Fr</div><div>Sa</div><div>So</div>
+          </div>
+
+          <!-- Kalender-Tageskacheln Dezember 2026 -->
+          <div class="calendar-grid-days" id="calendarDaysGrid">
+            <!-- Dynamisch oder statisch gefüllt via app.js -->
+          </div>
+        </div>
+
+        <!-- DETAIL-ANSICHT: 1,5-STUNDEN-TAKT FÜR DEN GEWÄHLTEN TAG -->
+        <div class="calendar-day-detail-box">
+          <div class="calendar-date-stepper">
+            <button type="button" class="stepper-btn" id="prevDayBtn" title="Vorheriger Tag"><i class="fa-solid fa-chevron-left"></i> Tag zur&uuml;ck</button>
+            <div class="stepper-display">
+              <input type="date" id="calendarDateInput" min="2026-11-15" max="2026-12-24" value="2026-12-24" class="stepper-native-date">
+              <div class="stepper-title" id="stepperDayTitle">Donnerstag, 24. Dezember 2026 (Heiligabend)</div>
+              <div class="stepper-sub" id="stepperDaySub">T&auml;glicher Takt: 10:00 Uhr bis 20:00 Uhr (Abstand: 1,5 Stunden)</div>
+            </div>
+            <button type="button" class="stepper-btn" id="nextDayBtn" title="N&auml;chster Tag">N&auml;chster Tag <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- 1,5-Stunden Zeit-Slots Raster -->
+          <div class="calendar-slots-grid" id="calendarSlotsGrid">
+            <!-- Dynamisch initialisiert -->
+          </div>
+        </div>
+
+        <!-- Termin-Auswahl-Bestätigungsbox -->
+        <div class="calendar-selection-banner" id="calendarSelectionBanner" style="display: none;">
+          <div class="selection-banner-content">
+            <i class="fa-solid fa-circle-check" style="font-size: 2rem; color: #34d399;"></i>
+            <div>
+              <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gold); font-weight: 700;">Ihr ausgew&auml;hlter Termin-Slot:</div>
+              <div style="font-size: 1.3rem; font-weight: 800; color: #fff;" id="selectedSlotText">24.12.2026 &bull; 14:30 &ndash; 16:00 Uhr</div>
+              <div style="font-size: 0.88rem; color: #cbd5e1; margin-top: 4px;">
+                <i class="fa-brands fa-paypal" style="color: #38bdf8;"></i> Verbindliche Best&auml;tigung bei 50 % Vorkasse per PayPal. Der Restbetrag wird am Auftrittstag f&auml;llig.
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-primary" style="white-space: nowrap; padding: 14px 28px; font-weight: 700; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);">
+            <i class="fa-solid fa-arrow-down"></i> Jetzt unten eintragen &amp; Vorkasse per PayPal leisten
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
 
     <!-- ABOUT SECTION -->
     <section class="about-section" id="about">
@@ -4328,81 +5362,7 @@ body {
         <!-- ==========================================================================
          SICHTBARER INTERAKTIVER RESERVIERUNGSPLAN (15.11.2026 - 24.12.2026)
          ========================================================================== -->
-    <section class="booking-calendar-section" id="reservierungsplan">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> Interaktiver Live-Terminplaner&copy; 2026</span>
-          <h2 class="section-title">Sichtbarer <span>Reservierungsplan</span></h2>
-          <p class="section-subtitle">
-            Hier sehen Sie in Echtzeit alle noch freien und bereits belegten Termine im Buchungszeitraum vom <strong>15.11.2026 bis 24.12.2026</strong>. 
-            T&auml;glich im festen 1,5-Stunden-Takt von <strong>10:00 Uhr bis 20:00 Uhr</strong>. Klicken Sie einfach auf einen freien Termin zur Direktbuchung!
-          </p>
-        </div>
-
-        <!-- Termin-Legende & Statusregeln -->
-        <div class="calendar-legend-card">
-          <div class="legend-items">
-            <div class="legend-item"><span class="legend-dot dot-free"></span> <strong>Gr&uuml;n / Gold:</strong> Freier Termin (sofort buchbar)</div>
-            <div class="legend-item"><span class="legend-dot dot-booked"></span> <strong>Rot:</strong> Bereits reserviert / belegt</div>
-            <div class="legend-item"><span class="legend-dot dot-selected"></span> <strong>Blau / Gold:</strong> Ihr ausgew&auml;hlter Termin</div>
-          </div>
-          <div class="legend-notice">
-            <i class="fa-solid fa-circle-exclamation" style="color: #f87171;"></i>
-            <span><strong>Feste Reservierungen vermerkt:</strong> 
-              Am <strong>05.12. & 06.12.2026 (Nikolaus-Wochenende)</strong> ganzt&auml;gig komplett belegt &bull; Am <strong>12.12.2026</strong> ganzt&auml;gig komplett &bull; Am <strong>19.12.2026</strong> ganzt&auml;gig &bull; Am <strong>23.12.2026 (Vorabend Heiligabend)</strong> ganzt&auml;gig komplett belegt &bull; 
-              Am <strong>24.12.2026 (Heiligabend)</strong> ab <strong>18:30 Uhr</strong> bis zum Schluss reserviert.
-            </span>
-          </div>
-        </div>
-
-        <!-- Kalender-Bedienleiste: Tag-Auswahl & Schnellwahltasten -->
-        <div class="calendar-controls-box">
-          <div class="calendar-quick-picks">
-            <span class="quick-pick-label"><i class="fa-solid fa-bolt"></i> Schnellwahl:</span>
-            <button type="button" class="quick-day-btn active" data-date="2026-12-24">&#11088; 24.12. Heiligabend</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-22">&#128197; 22.12. Di. (10-13 Uhr belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-23">&#128197; 23.12. Mi. (Komplett belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-06">&#127877; 06.12. Nikolaus (Komplett belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-12">&#128197; 12.12. Sa. (Komplett belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-05">&#127876; 05.12. Vorabend (Komplett belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-19">&#128197; 19.12. Sa. (Komplett belegt)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-12-20">&#128367;&#65039; 4. Advent (20.12.)</button>
-            <button type="button" class="quick-day-btn" data-date="2026-11-15">&#128640; Saisonstart (15.11.)</button>
-          </div>
-
-          <div class="calendar-date-stepper">
-            <button type="button" class="stepper-btn" id="prevDayBtn" title="Vorheriger Tag"><i class="fa-solid fa-chevron-left"></i> Tag zur&uuml;ck</button>
-            <div class="stepper-display">
-              <input type="date" id="calendarDateInput" min="2026-11-15" max="2026-12-24" value="2026-12-24" class="stepper-native-date">
-              <div class="stepper-title" id="stepperDayTitle">Donnerstag, 24. Dezember 2026 (Heiligabend)</div>
-              <div class="stepper-sub" id="stepperDaySub">T&auml;glicher Takt: 10:00 Uhr bis 20:00 Uhr (Abstand: 1,5 Stunden)</div>
-            </div>
-            <button type="button" class="stepper-btn" id="nextDayBtn" title="N&auml;chster Tag">N&auml;chster Tag <i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-        </div>
-
-        <!-- 1,5-Stunden Zeit-Slots Raster -->
-        <div class="calendar-slots-grid" id="calendarSlotsGrid">
-          <!-- Dynamisch initialisiert -->
-        </div>
-
-        <!-- Termin-Auswahl-Best&auml;tigungsbox -->
-        <div class="calendar-selection-banner" id="calendarSelectionBanner" style="display: none;">
-          <div class="selection-banner-content">
-            <i class="fa-solid fa-circle-check" style="font-size: 1.8rem; color: #34d399;"></i>
-            <div>
-              <div style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-gold);">Ihr ausgew&auml;hlter Termin-Slot:</div>
-              <div style="font-size: 1.2rem; font-weight: 700; color: #fff;" id="selectedSlotText">24.12.2026 &bull; 16:00 &ndash; 17:30 Uhr</div>
-              <div style="font-size: 0.85rem; color: #94a3b8;">Der Termin wurde unten in das Formular eingetragen. 50 % Anzahlung bei Bestellung per PayPal erforderlich.</div>
-            </div>
-          </div>
-          <a href="#reservierungsplan" class="btn btn-primary" style="white-space: nowrap; padding: 12px 24px;">
-            <i class="fa-solid fa-arrow-down"></i> Jetzt unten buchen &amp; 50 % per PayPal anzahlen
-          </a>
-        </div>
-
-      </div>
-    </section>
+    
 <section class="booking-section" id="booking"><span id="buchung" style="position:relative;top:-90px;visibility:hidden;display:block;"></span>
       <div class="container">
         <div class="section-header">
@@ -4414,53 +5374,114 @@ body {
         </div>
 
         <div class="booking-form-box">
+        <!-- INTERAKTIVER 5-MINUTEN-RESERVIERUNGS-COUNTDOWN -->
+        <div id="activeReservationCountdownBox" style="display: none; margin-bottom: 26px; padding: 20px 24px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(15, 23, 42, 0.97)); border: 2.5px solid #f59e0b; border-radius: 14px; box-shadow: 0 8px 30px rgba(245, 158, 11, 0.35); text-align: left;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 52px; height: 52px; border-radius: 50%; background: #f59e0b; color: #0f172a; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; flex-shrink: 0; box-shadow: 0 0 15px rgba(245, 158, 11, 0.6);">
+                <i class="fa-solid fa-stopwatch" id="timerIcon"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1.2px; color: #fbbf24; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+                  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #34d399; animation: pulse 1.5s infinite;"></span>
+                  Exklusive Live-Terminreservierung aktiv
+                </div>
+                <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 2px;" id="timerSlotDetails">
+                  Termin: Noch kein Termin gew&auml;hlt
+                </div>
+                <div style="font-size: 0.86rem; color: #cbd5e1; margin-top: 3px; line-height: 1.4;">
+                  Dieser Termin ist aktuell <strong>f&uuml;r Sie reserviert</strong>. Schlie&szlig;en Sie bitte die 50 % Anzahlung vor Ablauf der Zeit ab!
+                </div>
+              </div>
+            </div>
+            <div style="text-align: right; background: rgba(0, 0, 0, 0.65); padding: 12px 22px; border-radius: 12px; border: 1.5px solid rgba(245, 158, 11, 0.6); box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);">
+              <div style="font-size: 0.75rem; color: #fbbf24; text-transform: uppercase; font-weight: 800; letter-spacing: 1px;">Reservierungszeit</div>
+              <div id="reservationTimerDisplay" style="font-size: 2.2rem; font-weight: 900; color: #fbbf24; font-family: monospace; letter-spacing: 2px; line-height: 1.1;">05:00</div>
+              <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 2px;">Minuten : Sekunden</div>
+            </div>
+          </div>
+          <div style="margin-top: 16px; background: rgba(255, 255, 255, 0.12); height: 10px; border-radius: 5px; overflow: hidden; position: relative;">
+            <div id="reservationTimerProgressBar" style="background: linear-gradient(90deg, #10b981 0%, #f59e0b 60%, #ef4444 100%); width: 100%; height: 100%; transition: width 1s linear; border-radius: 5px;"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 0.78rem; color: #cbd5e1;">
+            <span><i class="fa-solid fa-lock" style="color: #34d399;"></i> F&uuml;r andere Besucher aktuell gesperrt</span>
+            <span style="color: #fca5a5;"><i class="fa-solid fa-triangle-exclamation"></i> Nach Ablauf wird der Termin wieder freigegeben</span>
+          </div>
+        </div>
+
+        <!-- MODAL: RESERVIERUNGSZEIT ABGELAUFEN -->
+        <div id="reservationExpiredModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.88); z-index: 100000; align-items: center; justify-content: center; padding: 20px;">
+          <div style="background: linear-gradient(135deg, #0f172a, #1e293b); border: 2.5px solid #ef4444; border-radius: 16px; padding: 32px 28px; max-width: 540px; width: 100%; text-align: center; box-shadow: 0 15px 50px rgba(0,0,0,0.8), 0 0 35px rgba(239, 68, 68, 0.4);">
+            <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); border: 2px solid #ef4444; display: flex; align-items: center; justify-content: center; color: #f87171; font-size: 2.2rem; margin: 0 auto 20px auto;">
+              <i class="fa-solid fa-hourglass-end"></i>
+            </div>
+            <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 12px; font-weight: 800;">5 Minuten Reservierungszeit abgelaufen!</h3>
+            <p style="color: #cbd5e1; font-size: 0.98rem; line-height: 1.6; margin-bottom: 24px;">
+              Die 5-min&uuml;tige Reservierung f&uuml;r Ihren Wunschtermin ist abgelaufen, da kein Zahlungseingang best&auml;tigt wurde.<br><br>
+              <strong>Der Termin wurde automatisch wieder f&uuml;r alle Besucher freigegeben.</strong> Alles beginnt wieder von vorne &ndash; Sie k&ouml;nnen den Termin oder einen anderen freien Slot jetzt erneut ausw&auml;hlen.
+            </p>
+            <button type="button" id="btnRestartReservation" class="btn btn-primary" style="width: 100%; padding: 14px 24px; font-size: 1.05rem; font-weight: 700; background: linear-gradient(135deg, #f59e0b, #d97706); border-color: #fbbf24; cursor: pointer;">
+              <i class="fa-solid fa-rotate-right"></i> Zur&uuml;ck zum Kalender &amp; neu starten
+            </button>
+          </div>
+        </div>
           <form id="bookingForm">
         <!-- NEUE VERBINDLICHE ZAHLUNGS- & AUFTRAGSBEDINGUNGEN -->
+                <!-- VERBINDLICHE ZAHLUNGS- & AUFTRAGSBEDINGUNGEN -->
         <div class="payment-rules-card" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95)); border: 2px solid var(--color-gold); border-radius: var(--radius-md); padding: 24px; margin-bottom: 30px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding-bottom: 12px;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(96, 165, 250, 0.15); border: 1px solid #60a5fa; display: flex; align-items: center; justify-content: center; color: #60a5fa; font-size: 1.4rem; flex-shrink: 0;">
               <i class="fa-brands fa-paypal"></i>
             </div>
             <div>
-              <h3 style="color: var(--color-gold-light); font-size: 1.2rem; margin: 0; font-weight: 700;">Verbindliche Zahlungs- &amp; Auftragsbedingungen f&uuml;r Vor-Ort-Besuche</h3>
+              <h3 style="color: var(--color-gold-light); font-size: 1.2rem; margin: 0; font-weight: 700;">Verbindlicher Weg bis zur Bezahlung &amp; Auftragsfreigabe</h3>
               <div style="color: #cbd5e1; font-size: 0.88rem;">G&uuml;ltig f&uuml;r alle Auftritte im Buchungszeitraum 15.11.2026 &ndash; 24.12.2026</div>
             </div>
           </div>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
-            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 8px; padding: 16px;">
-              <div style="font-weight: 700; color: #60a5fa; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-money-bill-wave"></i> 1. 50 % Anzahlung per PayPal
+            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 8px; padding: 16px;">
+              <div style="font-weight: 700; color: #fbbf24; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-stopwatch"></i> 1. 5 Minuten exklusiv reserviert
               </div>
               <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
-                <strong>50 % der Gesamtgage</strong> sind bei Bestellung direkt per PayPal an <strong style="color: #93c5fd;">sh.sm.ki.managenent@gmail.com</strong> zu &uuml;berweisen. <em>Erst nach Zahlungseingang wird die verbindliche Auftragsbest&auml;tigung versendet.</em>
+                Ihr gew&auml;hlter Termin wird bei Interesse <strong>5 Minuten lang exklusiv f&uuml;r Sie gesperrt</strong>. Geht in dieser Zeit keine 50 % Anzahlung ein, wird der Termin wieder freigegeben und alles beginnt von vorne.
               </div>
             </div>
 
-            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: 8px; padding: 16px;">
-              <div style="font-weight: 700; color: #34d399; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-hand-holding-dollar"></i> 2. 50 % Restzahlung bei Ankunft
+            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(96, 165, 250, 0.4); border-radius: 8px; padding: 16px;">
+              <div style="font-weight: 700; color: #60a5fa; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-brands fa-paypal"></i> 2. 50 % Anzahlung an PayPal
               </div>
               <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
-                Die restlichen <strong>50 % der Gesamtgage</strong> werden bei Erscheinen des Weihnachtsmanns direkt vor Ort in bar entrichtet. Die offizielle Quittung wird Ihnen direkt vor dem Auftritt &uuml;berreicht.
+                <strong>50 % der Gesamtgage</strong> sind per PayPal an <strong style="color: #93c5fd;">sh.sm.ki.management@gmail.com</strong> zu &uuml;berweisen. Automatische R&uuml;ckmeldung &amp; Buchungsdaten gehen an dieselbe E-Mail.
+              </div>
+            </div>
+
+            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(52, 211, 153, 0.4); border-radius: 8px; padding: 16px;">
+              <div style="font-weight: 700; color: #34d399; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-circle-check"></i> 3. Geld da &rarr; Termin freigegeben!
+              </div>
+              <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
+                Sobald die 50 % Anzahlung best&auml;tigt ist, wird der <strong>Termin verbindlich im Tourenplan freigegeben &amp; garantiert</strong>. Sie erhalten sofort Ihre Auftragsbest&auml;tigung.
+              </div>
+            </div>
+
+            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(168, 85, 247, 0.4); border-radius: 8px; padding: 16px;">
+              <div style="font-weight: 700; color: #c084fc; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-hand-holding-dollar"></i> 4. 50 % Restgage bei Ankunft
+              </div>
+              <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
+                Die restlichen <strong>50 % der Gesamtgage</strong> werden bei Erscheinen des Weihnachtsmanns vor Ort in bar entrichtet (offizielle Quittung direkt vor dem Auftritt).
               </div>
             </div>
 
             <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px; padding: 16px;">
               <div style="font-weight: 700; color: #fbbf24; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-gift"></i> 3. Zugebundener Jutesack &amp; leserliche Namen
+                <i class="fa-solid fa-gift"></i> 5. Zugebundener Jutesack &amp; Wasser
               </div>
               <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
-                Die Geschenke sind in einem <strong>fest zugebundenen Jutesack</strong> bereitzustellen. Da der Weihnachtsmann im festlichen Kerzenlicht etwas schlechter sieht, m&uuml;ssen alle Pr&auml;sente mit <strong>gro&szlig;en, deutlich leserlichen Namen</strong> beschriftet sein. Zudem muss eine erreichbare <strong>Telefonnummer</strong> angegeben werden, um vorab kurz telefonisch abzustimmen, an welchem gesch&uuml;tzten Ort der Jutesack steht (z.&nbsp;B. vor der Haust&uuml;r oder im Flur).
-              </div>
-            </div>
-
-            <div style="background: rgba(2, 6, 23, 0.6); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 16px;">
-              <div style="font-weight: 700; color: #38bdf8; margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-bottle-water"></i> 4. 1 Flasche stilles Wasser
-              </div>
-              <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;">
-                Dem Weihnachtsmann ist direkt vor dem Auftritt <strong>1 Flasche stilles Wasser</strong> zur Erfrischung zu &uuml;berreichen.
+                Fest zugebundener Jutesack mit gro&szlig;en, leserlichen Namen (telefonische Vorabsprache) sowie <strong>1 Flasche stilles Wasser</strong> zur Begr&uuml;&szlig;ung bereitstellen.
               </div>
             </div>
           </div>
@@ -4567,7 +5588,7 @@ body {
             </div>
 
             <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid var(--color-frost-border); border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 24px; font-size: 0.82rem; color: var(--color-text-dim); line-height: 1.45;">
-              <i class="fa-solid fa-bicycle" style="color: var(--color-gold); margin-right: 6px;"></i> <strong>Striktes Einsatzgebiet:</strong> Auftritte finden ausschließlich an Orten statt, die ab dem <strong>Erfurter Anger</strong> mit dem Fahrrad innerhalb von maximal 30 Minuten erreichbar sind. <strong>Andere Aufträge werden nicht entgegengenommen!</strong> Verbindlicher Festpreis: <strong>80,00 € netto + 19 % MwSt. = 95,20 € brutto</strong> inklusive Fahrrad-Anfahrt. 50 % Anzahlung (47,60 €) per PayPal an <strong style="color: #60a5fa;">sh.sm.ki.managenent@gmail.com</strong>, Restbetrag (50 %) in bar bei Bescherung.</div>
+              <i class="fa-solid fa-bicycle" style="color: var(--color-gold); margin-right: 6px;"></i> <strong>Striktes Einsatzgebiet:</strong> Auftritte finden ausschließlich an Orten statt, die ab dem <strong>Erfurter Anger</strong> mit dem Fahrrad innerhalb von maximal 30 Minuten erreichbar sind. <strong>Andere Aufträge werden nicht entgegengenommen!</strong> Verbindlicher Festpreis: <strong>80,00 € netto + 19 % MwSt. = 95,20 € brutto</strong> inklusive Fahrrad-Anfahrt. 50 % Anzahlung (47,60 €) per PayPal an <strong style="color: #60a5fa;">sh.sm.ki.management@gmail.com</strong>, Restbetrag (50 %) in bar bei Bescherung.</div>
 
             <button type="submit" id="bookingSubmitBtn" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.12rem; display: flex; align-items: center; justify-content: center; gap: 12px; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); border: 2px solid var(--color-gold); box-shadow: 0 6px 20px rgba(220, 38, 38, 0.45); cursor: pointer;">
               <i class="fa-brands fa-paypal" style="font-size: 1.4rem; color: #60a5fa;"></i> 
@@ -4702,7 +5723,7 @@ body {
               <i class="fa-solid fa-chevron-down"></i>
             </summary>
             <div class="faq-answer">
-              Nach Absprache und Bestätigung Ihres Wunschtermins erhalten Sie die Zahlungsdetails für PayPal (<strong style="color: #60a5fa;">sh.sm.ki.managenent@gmail.com</strong>). Sobald die Zahlung eingegangen ist, ist Ihr Zeitfenster verbindlich im Tourenplan garantiert. Sie erhalten selbstverständlich eine ordentliche Rechnung mit ausgewiesener MwSt. (19 %).
+              Nach Absprache und Bestätigung Ihres Wunschtermins erhalten Sie die Zahlungsdetails für PayPal (<strong style="color: #60a5fa;">sh.sm.ki.management@gmail.com</strong>). Sobald die Zahlung eingegangen ist, ist Ihr Zeitfenster verbindlich im Tourenplan garantiert. Sie erhalten selbstverständlich eine ordentliche Rechnung mit ausgewiesener MwSt. (19 %).
             </div>
           </details>
 
@@ -4804,7 +5825,7 @@ body {
               <strong>Telefon / Mobil:</strong> <a href="tel:017641683260">0176 41683260</a><br>
               <strong>WhatsApp:</strong> <a href="https://wa.me/4917641683260" target="_blank" rel="noopener noreferrer">0176 41683260</a><br>
               <strong>E-Mail:</strong> <a href="mailto:weihnachtsmann-erfurt@gmail.com">weihnachtsmann-erfurt@gmail.com</a><br>
-              <strong>Zahlungs- &amp; Buchungskoordination:</strong> <a href="mailto:sh.sm.ki.managenent@gmail.com">sh.sm.ki.managenent@gmail.com</a><br>
+              <strong>Zahlungs- &amp; Buchungskoordination:</strong> <a href="mailto:sh.sm.ki.management@gmail.com">sh.sm.ki.management@gmail.com</a><br>
               <strong>Website:</strong> <a href="https://weihnachtsmann-erfurt.de">https://weihnachtsmann-erfurt.de</a>
             </p>
 
@@ -4931,7 +5952,7 @@ body {
               (1) <strong>Stadtgebiet Erfurt:</strong> Verbindlicher Festpreis <strong>80,00 &euro; netto + 19 % MwSt. (15,20 &euro;) = 95,20 &euro; brutto</strong> inklusive Anfahrt in allen 34 Stadtteilen.<br>
               (2) <strong>Einsatzgebiet &amp; Ausschluss anderer Auftr&auml;ge:</strong> Vor-Ort-Auftritte finden ausschlie&szlig;lich an Orten statt, die ab Haltestelle Anger mit dem Fahrrad innerhalb einer Fahrzeit von maximal 30 Minuten erreichbar sind. Andere Auftr&auml;ge oder Orte au&szlig;erhalb dieses 30-Minuten-Fahrrad-Radius ab Anger werden nicht entgegengenommen und nicht durchgef&uuml;hrt. Es fallen keinerlei gesonderte Fahrtkosten an.<br>
               (3) <strong>Festpreisgarantie:</strong> S&auml;mtliche genannten Preise sind verbindliche Endpreise und nicht nachverhandelbar.<br>
-              (4) <strong>50 % Anzahlung per PayPal:</strong> Bei Bestellung ist eine Anzahlung in H&ouml;he von <strong>50 % des Gesamthonorars</strong> unmittelbar per PayPal an <strong>sh.sm.ki.managenent@gmail.com</strong> zu &uuml;berweisen. Die verbindliche Auftragsbest&auml;tigung wird erst nach Eingang der Anzahlung wirksam versendet.<br>
+              (4) <strong>50 % Anzahlung per PayPal:</strong> Bei Bestellung ist eine Anzahlung in H&ouml;he von <strong>50 % des Gesamthonorars</strong> unmittelbar per PayPal an <strong>sh.sm.ki.management@gmail.com</strong> zu &uuml;berweisen. Die verbindliche Auftragsbest&auml;tigung wird erst nach Eingang der Anzahlung wirksam versendet.<br>
               (5) <strong>50 % Restzahlung vor Ort:</strong> Die verbleibenden <strong>50 % des Honorars</strong> sind bei Erscheinen des Weihnachtsmanns vor Ort unmittelbar vor dem Auftritt in bar zu entrichten. Die ordnungsgemäße Quittung/Rechnung wird direkt vor Ort vor dem Auftritt &uuml;berreicht.
             </p>
 
@@ -7453,6 +8474,148 @@ function initMagicWebsite() {
   const priceCalculationText = document.getElementById('priceCalculationText');
   const priceNoticeText = document.getElementById('priceNoticeText');
   const addonCharityCb = document.getElementById('addonCharity');
+  
+// ==========================================================================
+// 5-MINUTEN-LIVE-RESERVIERUNGS-ENGINE (Exklusiver Schutz & PayPal-Anzahlung)
+// ==========================================================================
+let reservationTimerInterval = null;
+let reservationSecondsLeft = 300; // 5 Minuten = 300 Sekunden
+let currentReservedSlot = null;
+let bookingPaymentCompleted = false;
+
+function formatReservationTime(totalSecs) {
+  const m = Math.floor(totalSecs / 60);
+  const s = totalSecs % 60;
+  return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+}
+
+function startReservationTimer(dateStr, slot) {
+  if (bookingPaymentCompleted) return; // Bereits bezahlt und fest gebucht
+
+  if (reservationTimerInterval) {
+    clearInterval(reservationTimerInterval);
+    reservationTimerInterval = null;
+  }
+
+  reservationSecondsLeft = 300; // Reset auf 5 Minuten (300 Sekunden)
+  currentReservedSlot = { date: dateStr, slot: slot };
+
+  const countdownBox = document.getElementById("activeReservationCountdownBox");
+  const timerDisplay = document.getElementById("reservationTimerDisplay");
+  const timerBar = document.getElementById("reservationTimerProgressBar");
+  const timerSlotDetails = document.getElementById("timerSlotDetails");
+
+  if (countdownBox) {
+    countdownBox.style.display = "block";
+    countdownBox.classList.remove("timer-warning");
+  }
+
+  const parts = (dateStr || "").split("-");
+  const dateFormatted = parts.length === 3 ? parts[2] + "." + parts[1] + "." + parts[0] : dateStr;
+  const timeLabel = slot ? (slot.label || (slot.start + " - " + slot.end + " Uhr")) : "";
+
+  if (timerSlotDetails) {
+    timerSlotDetails.innerHTML = "<span style=\"color: #fbbf24;\">" + dateFormatted + " &bull; " + timeLabel + "</span> (1,5 Std. geblockt)";
+  }
+  if (timerDisplay) {
+    timerDisplay.textContent = "05:00";
+  }
+  if (timerBar) {
+    timerBar.style.width = "100%";
+  }
+
+  reservationTimerInterval = setInterval(() => {
+    if (bookingPaymentCompleted) {
+      clearInterval(reservationTimerInterval);
+      return;
+    }
+
+    reservationSecondsLeft--;
+
+    if (reservationSecondsLeft <= 0) {
+      clearInterval(reservationTimerInterval);
+      reservationTimerInterval = null;
+      handleReservationExpired();
+      return;
+    }
+
+    if (timerDisplay) {
+      timerDisplay.textContent = formatReservationTime(reservationSecondsLeft);
+    }
+    if (timerBar) {
+      const pct = Math.max(0, (reservationSecondsLeft / 300) * 100);
+      timerBar.style.width = pct + "%";
+    }
+
+    // Ab 60 Sekunden Restzeit: Warnstufe rot mit Pulsieren
+    if (reservationSecondsLeft <= 60 && countdownBox) {
+      countdownBox.classList.add("timer-warning");
+    }
+  }, 1000);
+}
+
+function stopReservationTimer() {
+  if (reservationTimerInterval) {
+    clearInterval(reservationTimerInterval);
+    reservationTimerInterval = null;
+  }
+}
+
+function handleReservationExpired() {
+  if (bookingPaymentCompleted) return;
+
+  const countdownBox = document.getElementById("activeReservationCountdownBox");
+  if (countdownBox) {
+    countdownBox.style.display = "none";
+  }
+
+  const bookDateInput = document.getElementById("bookDate");
+  if (bookDateInput) {
+    bookDateInput.value = "";
+    bookDateInput.style.borderColor = "";
+    bookDateInput.style.boxShadow = "";
+  }
+
+  // Termin wieder vollstaendig freigeben
+  if (typeof activeSelectedSlot !== "undefined") {
+    activeSelectedSlot = null;
+  }
+  currentReservedSlot = null;
+
+  // Kalender aktualisieren, Slot wird wieder frei/gruen
+  if (typeof renderSlots === "function") {
+    renderSlots();
+  }
+  if (typeof renderMonthGrid === "function") {
+    renderMonthGrid();
+  }
+
+  // Modal fuer Zeitueberschreitung anzeigen
+  const expiredModal = document.getElementById("reservationExpiredModal");
+  if (expiredModal) {
+    expiredModal.style.display = "flex";
+  } else {
+    alert("Die 5 Minuten Reservierungszeit sind abgelaufen! Der Termin wurde wieder freigegeben. Alles beginnt wieder von vorne.");
+  }
+}
+
+// Modal Schliessen & Neustart-Event
+document.addEventListener("DOMContentLoaded", () => {
+  const btnRestart = document.getElementById("btnRestartReservation");
+  if (btnRestart) {
+    btnRestart.addEventListener("click", () => {
+      const expiredModal = document.getElementById("reservationExpiredModal");
+      if (expiredModal) {
+        expiredModal.style.display = "none";
+      }
+      const calSection = document.getElementById("reservierungsplan");
+      if (calSection) {
+        calSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+});
+
   const bookingForm = document.getElementById('bookingForm');
   const bookingSuccessMsg = document.getElementById('bookingSuccessMsg');
 
@@ -7548,130 +8711,218 @@ function initMagicWebsite() {
   };
 
   // Form Submit Action -> Direct PayPal Routing
+    // Form Submit Action -> Kompletter Weg bis zur Bezahlung & Termin-Freigabe
   if (bookingForm) {
-        bookingForm.addEventListener('submit', function(e) {
+    bookingForm.addEventListener("submit", function(e) {
       e.preventDefault();
 
-      const name = document.getElementById('bookName') ? document.getElementById('bookName').value.trim() : '';
-      const phone = document.getElementById('bookPhone') ? document.getElementById('bookPhone').value.trim() : '';
-      const email = document.getElementById('bookEmail') ? document.getElementById('bookEmail').value.trim() : '';
-      const date = document.getElementById('bookDate') ? document.getElementById('bookDate').value : '';
-      const art = bookArtSelect ? bookArtSelect.options[bookArtSelect.selectedIndex].text : '';
-      const address = bookAddress ? bookAddress.value.trim() : '';
-      const notes = document.getElementById('bookNotes') ? document.getElementById('bookNotes').value.trim() : '';
-      const charityDonation = (addonCharityCb && addonCharityCb.checked) ? '\n* Inkl. 5,00 Euro freiwillige Spende für Thüringer Kinderhilfe' : '';
+      const name = document.getElementById("bookName") ? document.getElementById("bookName").value.trim() : "";
+      const phone = document.getElementById("bookPhone") ? document.getElementById("bookPhone").value.trim() : "";
+      const email = document.getElementById("bookEmail") ? document.getElementById("bookEmail").value.trim() : "";
+      const date = document.getElementById("bookDate") ? document.getElementById("bookDate").value : "";
+      const art = bookArtSelect ? bookArtSelect.options[bookArtSelect.selectedIndex].text : "";
+      const address = bookAddress ? bookAddress.value.trim() : "";
+      const notes = document.getElementById("bookNotes") ? document.getElementById("bookNotes").value.trim() : "";
+      const charityDonation = (addonCharityCb && addonCharityCb.checked) ? "\n* Inkl. 5,00 Euro freiwillige Spende fuer Thueringer Kinderhilfe" : "";
 
-      // Calculate 50% downpayment & 50% remainder
-      const grossVal = (typeof currentBookingTotalGross === 'number' && currentBookingTotalGross > 0) ? currentBookingTotalGross : 95.20;
+      // Gage-Berechnung: 50 % Anzahlung & 50 % Restgage
+      const grossVal = (typeof currentBookingTotalGross === "number" && currentBookingTotalGross > 0) ? currentBookingTotalGross : 95.20;
       const downpaymentVal = Math.round((grossVal / 2) * 100) / 100;
       const restVal = Math.round((grossVal - downpaymentVal) * 100) / 100;
 
-      const grossDisplayStr = grossVal.toFixed(2).replace('.', ',') + ' \u20AC';
-      const downpaymentDisplayStr = downpaymentVal.toFixed(2).replace('.', ',') + ' \u20AC';
-      const restDisplayStr = restVal.toFixed(2).replace('.', ',') + ' \u20AC';
+      const grossDisplayStr = grossVal.toFixed(2).replace(".", ",") + " \u20AC";
+      const downpaymentDisplayStr = downpaymentVal.toFixed(2).replace(".", ",") + " \u20AC";
+      const restDisplayStr = restVal.toFixed(2).replace(".", ",") + " \u20AC";
       const downpaymentFormattedStr = downpaymentVal.toFixed(2);
 
-      const paypalBusinessEmail = 'sh.sm.ki.managenent@gmail.com';
-      const itemName = `50% Anzahlung Weihnachtsmann Erfurt - ${name || 'Kunde'} (${date ? date.replace('T', ' ') : '2026'})`;
+      const paypalBusinessEmail = "sh.sm.ki.management@gmail.com";
+      const itemName = "50% Anzahlung Weihnachtsmann Erfurt - " + (name || "Kunde") + " (" + (date ? date.replace("T", " ") : "2026") + ")";
       
-      const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(paypalBusinessEmail)}&item_name=${encodeURIComponent(itemName)}&amount=${downpaymentFormattedStr}&currency_code=EUR&no_shipping=1`;
+      const paypalUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=" + encodeURIComponent(paypalBusinessEmail) + "&item_name=" + encodeURIComponent(itemName) + "&amount=" + downpaymentFormattedStr + "&currency_code=EUR&no_shipping=1";
+      const paypalMeUrl = "https://www.paypal.me/shsmkimanagement/" + downpaymentFormattedStr;
 
-      const waMsg = `*Buchungsanfrage & 50 % PayPal-Anzahlung Weihnachtsmann Erfurt UG*\n\n` +
-        `*Name:* ${name}\n` +
-        `*Telefon:* ${phone}\n` +
-        `*E-Mail:* ${email}\n` +
-        `*Wunschtermin:* ${date ? date.replace('T', ' um ') + ' Uhr' : '2026'}\n` +
-        `*Format:* ${art}\n` +
-        `*Adresse:* ${address}${charityDonation}\n\n` +
-        `*Gesamthonorar:* ${grossDisplayStr}\n` +
-        `*50 % Anzahlung (jetzt per PayPal):* ${downpaymentDisplayStr}\n` +
-        `*50 % Restzahlung (bar bei Erscheinen vor Ort):* ${restDisplayStr} (Quittung wird direkt vor Ort überreicht)\n\n` +
-        `*Jutesack & Namen:* Fest zugebundener Jutesack wird bereitgestellt, Geschenke groß und deutlich leserlich beschriftet (der Weihnachtsmann sieht schlechter), telefonische Vorabsprache erfolgt unter ${phone}\n` +
-        `*Erfrischung:* 1 Flasche stilles Wasser wird direkt vor dem Auftritt überreicht\n` +
-        `*Notizen:* ${notes || 'Keine'}\n\n` +
-        `Buchungsanfrage abgesendet & 50 % PayPal-Anzahlung gestartet!`;
+      const bookingRef = "WE-" + Math.floor(100000 + Math.random() * 900000);
 
-      const waUrl = `https://wa.me/4917641683260?text=${encodeURIComponent(waMsg)}`;
+      const waMsg = "*Buchungsanfrage & 50 % PayPal-Anzahlung Weihnachtsmann Erfurt UG*\n\n" +
+        "*Referenz:* " + bookingRef + "\n" +
+        "*Name:* " + name + "\n" +
+        "*Telefon:* " + phone + "\n" +
+        "*E-Mail:* " + email + "\n" +
+        "*Wunschtermin:* " + (date ? date.replace("T", " um ") + " Uhr" : "2026") + "\n" +
+        "*Format:* " + art + "\n" +
+        "*Adresse:* " + address + charityDonation + "\n\n" +
+        "*Gesamthonorar:* " + grossDisplayStr + "\n" +
+        "*50 % Anzahlung (per PayPal):* " + downpaymentDisplayStr + "\n" +
+        "*50 % Restzahlung (bar vor Ort):* " + restDisplayStr + " (Quittung wird vor Ort ueberreicht)\n\n" +
+        "*Auftragsbedingungen:* Zugebundener Jutesack mit leserlichen Namen, 1 Flasche stilles Wasser vor Ort, 5-Minuten-Reservierungsschutz\n" +
+        "*Notizen:* " + (notes || "Keine") + "\n\n" +
+        "Buchung erfasst und 50 % Anzahlung an " + paypalBusinessEmail + " eingeleitet!";
 
-      // Dispatch booking notification to sh.sm.ki.managenent@gmail.com
+      const waUrl = "https://wa.me/4917641683260?text=" + encodeURIComponent(waMsg);
+
+      // 1. Automatische Rueckmeldung & Dispatch an sh.sm.ki.management@gmail.com
       try {
         const bookingPayload = {
-          name: name,
-          email: email,
-          telefon: phone,
-          wunschtermin: date,
-          format: art,
+          buchungsreferenz: bookingRef,
+          status: "50 % PayPal-Anzahlung eingeleitet (Wartet auf Bestaetigung)",
+          kunde_name: name,
+          kunde_email: email,
+          kunde_telefon: phone,
+          reservierter_termin: date ? date.replace("T", " um ") + " Uhr" : "2026",
+          auftrittsformat: art,
           adresse: address,
-          gesamtpreis: grossDisplayStr,
+          gesamthonorar_gage: grossDisplayStr,
           anzahlung_50_prozent: downpaymentDisplayStr,
-          restzahlung_vor_ort: restDisplayStr,
+          restgage_50_prozent_bar: restDisplayStr,
           paypal_empfaenger: paypalBusinessEmail,
-          jutesack_und_beschriftung: 'Zugebundener Jutesack wird bereitgestellt, Geschenke groß und deutlich leserlich beschriftet, telefonische Absprache vereinbart',
-          wasser_uebergabe: '1 Flasche stilles Wasser wird vor Ort überreicht',
+          auftragsregeln: "5-Minuten-Reservierungsfenster gewahrt, zugebundener Jutesack mit grossen Namen, 1 Flasche stilles Wasser, Quittung vor Ort",
           notizen: notes,
-          _subject: `Neue Buchungsanfrage & 50% Anzahlung von ${name || 'Kunde'} (${date || '2026'})`,
+          _subject: "[NEUE BUCHUNG " + bookingRef + "] 50% Anzahlung (" + downpaymentDisplayStr + ") von " + (name || "Kunde"),
           _replyto: email,
-          _template: 'table',
-          _captcha: 'false'
+          _template: "table",
+          _captcha: "false"
         };
-        fetch('https://formsubmit.co/ajax/sh.sm.ki.managenent@gmail.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        fetch("https://formsubmit.co/ajax/sh.sm.ki.management@gmail.com", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
           body: JSON.stringify(bookingPayload)
-        }).catch(e => console.log('Booking dispatch:', e));
+        }).catch(err => console.log("Booking dispatch:", err));
       } catch(err) {}
 
+      // Stoppe den Timeout-Reset, da der Kunde nun bezahlt
+      stopReservationTimer();
+
       if (bookingSuccessMsg) {
-        bookingSuccessMsg.style.display = 'block';
+        bookingSuccessMsg.style.display = "block";
         bookingSuccessMsg.innerHTML = `
-          <div style="font-size: 1.3rem; color: #34d399; margin-bottom: 12px; font-weight: 800;">
-            <i class="fa-solid fa-circle-check"></i> Buchungsanfrage erfolgreich erfasst!
-          </div>
-          <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid var(--color-gold); border-radius: 10px; padding: 18px; margin: 16px 0; text-align: left;">
-            <div style="font-size: 1rem; color: #fff; line-height: 1.6;">
-              Vielen Dank, <strong>${name}</strong>!<br>
-              Ihr Wunschtermin am <strong>${date ? date.replace('T', ' um ') + ' Uhr' : '2026'}</strong> wurde vorgemerkt.
-            </div>
+          <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98)); border: 2px solid var(--color-gold); border-radius: 14px; padding: 26px; box-shadow: 0 10px 45px rgba(0,0,0,0.7); text-align: left;">
             
-            <div style="margin: 16px 0; padding: 14px; background: rgba(96, 165, 250, 0.12); border: 1px solid #60a5fa; border-radius: 8px;">
-              <div style="color: #60a5fa; font-weight: 700; font-size: 1.05rem; margin-bottom: 6px;">
-                <i class="fa-brands fa-paypal"></i> Jetzt 50 % Anzahlung (${downpaymentDisplayStr}) per PayPal anweisen:
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 1.5px solid rgba(212, 175, 55, 0.3); padding-bottom: 16px; margin-bottom: 20px;">
+              <div>
+                <span style="background: #10b981; color: #042f2e; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">Schritt 1 abgeschlossen</span>
+                <h3 style="color: #fff; font-size: 1.45rem; margin: 6px 0 0 0; font-weight: 800;">Buchung erfasst &bull; Jetzt 50 % Anzahlung leisten</h3>
               </div>
-              <div style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.45;">
-                <strong>Verbindliche Regel:</strong> Erst nach Eingang der 50 % Anzahlung bei <strong style="color: #93c5fd;">${paypalBusinessEmail}</strong> wird die Buchungsbest&auml;tigung wirksam. Die restlichen 50 % (${restDisplayStr}) werden bei Erscheinen des Weihnachtsmanns vor dem Auftritt in bar entrichtet.
+              <div style="font-size: 0.9rem; color: #fbbf24; font-weight: 700;">
+                Buchungs-ID: <span style="font-family: monospace; color: #fff;">${bookingRef}</span>
               </div>
             </div>
 
-            <div style="margin: 12px 0; font-size: 0.88rem; color: #cbd5e1; line-height: 1.5;">
-              &bull; <strong>Zugebundener Jutesack &amp; leserliche Namen:</strong> Die Geschenke m&uuml;ssen in einem fest zugebundenen Jutesack bereitstehen. Da der Weihnachtsmann etwas schlechter sieht, bitte jedes Geschenk mit gro&szlig;en, deutlich leserlichen Namen beschriften. Der genaue Ablageort wird vorab kurz telefonisch abgestimmt.<br>
-              &bull; <strong>Erfrischung:</strong> Dem Weihnachtsmann ist vor dem Auftritt 1 Flasche stilles Wasser zu &uuml;berreichen.<br>
-              &bull; <strong>Quittung:</strong> Wird Ihnen direkt vor Ort vor dem Auftritt &uuml;berreicht.
+            <div style="font-size: 1rem; color: #e2e8f0; line-height: 1.6; margin-bottom: 20px;">
+              Vielen Dank, <strong>${name}</strong>!<br>
+              Ihr Wunschtermin am <strong style="color: #fbbf24;">${date ? date.replace('T', ' um ') + ' Uhr' : '2026'}</strong> ist vorgemerkt.
             </div>
 
-            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
-              <a href="${paypalUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1; min-width: 240px; justify-content: center; background: linear-gradient(135deg, #0284c7, #0369a1); border-color: #38bdf8; font-size: 1rem;">
-                <i class="fa-brands fa-paypal"></i> Jetzt 50 % (${downpaymentDisplayStr}) per PayPal zahlen
-              </a>
-              <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 240px; justify-content: center; border-color: #22c55e; color: #4ade80; font-size: 1rem;">
-                <i class="fa-brands fa-whatsapp"></i> Per WhatsApp best&auml;tigen
+            <!-- PAYPAL ZAHLUNGS-AUFFORDERUNG -->
+            <div style="background: rgba(96, 165, 250, 0.12); border: 1.5px solid #60a5fa; border-radius: 12px; padding: 20px; margin-bottom: 22px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+                <div style="color: #93c5fd; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 10px;">
+                  <i class="fa-brands fa-paypal" style="font-size: 1.5rem; color: #60a5fa;"></i> 50 % Anzahlung der Gesamtgage
+                </div>
+                <div style="font-size: 1.6rem; font-weight: 900; color: #fff;">
+                  ${downpaymentDisplayStr}
+                </div>
+              </div>
+              
+              <div style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.55;">
+                &bull; <strong>PayPal-Empf&auml;nger:</strong> <strong style="color: #93c5fd; font-size: 1.02rem;">${paypalBusinessEmail}</strong><br>
+                &bull; <strong>Regel:</strong> Ist das Geld eingegangen und best&auml;tigt, wird der Termin dauerhaft verbindlich im Tourenplan freigegeben. Automatische R&uuml;ckmeldung erfolgt an <em>${paypalBusinessEmail}</em>.<br>
+                &bull; <strong>Restgage:</strong> Die restlichen 50 % (${restDisplayStr}) werden bei Erscheinen vor Ort in bar bezahlt (inkl. Quittung).
+              </div>
+
+              <!-- BUTTONS DIREKT ZU PAYPAL -->
+              <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
+                <a href="${paypalUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1; min-width: 240px; justify-content: center; background: linear-gradient(135deg, #0284c7, #0369a1); border-color: #38bdf8; font-size: 1.05rem; padding: 14px 20px; font-weight: 700; box-shadow: 0 4px 20px rgba(2, 132, 199, 0.4);">
+                  <i class="fa-brands fa-paypal"></i> Jetzt 50 % (${downpaymentDisplayStr}) bei PayPal zahlen
+                </a>
+                <a href="${paypalMeUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center; border-color: #38bdf8; color: #38bdf8; font-size: 1rem; padding: 14px 20px;">
+                  <i class="fa-solid fa-link"></i> PayPal.me Direkttransfer
+                </a>
+              </div>
+            </div>
+
+            <!-- BUTTON: ZAHLUNGSEINGANG VOM KUNDEN BESTAETIGEN / TERMIN FREIGEBEN -->
+            <div id="paymentConfirmationSection" style="background: rgba(16, 185, 129, 0.12); border: 1.5px solid #10b981; border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+              <div style="font-weight: 700; color: #34d399; font-size: 1.05rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-circle-check"></i> Haben Sie die 50 % Anzahlung gesendet?
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                Klicken Sie nach Durchf&uuml;hrung der PayPal-Zahlung hier, um den Eingang zu best&auml;tigen und Ihren Termin sofort fest im Tourenplan freizugeben:
+              </p>
+              <button type="button" id="btnConfirmPaymentAndRelease" style="width: 100%; padding: 16px; font-size: 1.1rem; font-weight: 800; background: linear-gradient(135deg, #10b981, #059669); border: 2px solid #34d399; border-radius: 8px; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);">
+                <i class="fa-solid fa-check-double"></i> Ich habe die 50 % Anzahlung (${downpaymentDisplayStr}) per PayPal bezahlt &ndash; Termin freigeben!
+              </button>
+            </div>
+
+            <!-- HINWEISE ZUR DURCHFUEHRUNG -->
+            <div style="padding: 14px 16px; background: rgba(0, 0, 0, 0.4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); font-size: 0.86rem; color: #cbd5e1; line-height: 1.55;">
+              <strong>Wichtige Vor-Ort-Regeln:</strong><br>
+              &bull; <strong>Jutesack &amp; Beschriftung:</strong> Geschenke im fest zugebundenen Jutesack bereitstellen. Bitte jedes Geschenk mit <em>gro&szlig;en, leserlichen Namen</em> beschriften. Der genaue Ablageort wird telefonisch unter <strong>${phone}</strong> abgestimmt.<br>
+              &bull; <strong>Erfrischung:</strong> Vor dem Auftritt bitte 1 Flasche stilles Wasser &uuml;berreichen.<br>
+              &bull; <strong>Quittung:</strong> Wird direkt vor dem Auftritt &uuml;berreicht.
+            </div>
+
+            <div style="margin-top: 18px; text-align: center;">
+              <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="color: #4ade80; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fa-brands fa-whatsapp"></i> Zus&auml;tzlich per WhatsApp best&auml;tigen
               </a>
             </div>
           </div>
         `;
-        bookingSuccessMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        setTimeout(() => {
-          window.open(paypalUrl, '_blank');
-        }, 1200);
-      }
-    });
-      }
 
-      // Direct immediate navigation to PayPal for direct transfer
-      window.open(paypalUrl, '_blank');
+        // Event-Listener fuer "Zahlung bestaetigen & Termin freigeben"
+        setTimeout(() => {
+          const btnRelease = document.getElementById("btnConfirmPaymentAndRelease");
+          if (btnRelease) {
+            btnRelease.addEventListener("click", () => {
+              bookingPaymentCompleted = true;
+              stopReservationTimer();
+
+              // Zweite Rueckmeldung an sh.sm.ki.management@gmail.com: Zahlung bestaetigt
+              try {
+                fetch("https://formsubmit.co/ajax/sh.sm.ki.management@gmail.com", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                  body: JSON.stringify({
+                    buchungsreferenz: bookingRef,
+                    status: "ZAHLUNG VOM KUNDEN BESTAETIGT - TERMIN VERBINDLICH FREIGEGEBEN!",
+                    kunde: name,
+                    termin: date,
+                    telefon: phone,
+                    anzahlung: downpaymentDisplayStr,
+                    _subject: "[BEZAHLT & FREIGEGEBEN] 50% Anzahlung eingegangen von " + name + " (" + bookingRef + ")"
+                  })
+                }).catch(err => console.log(err));
+              } catch(e) {}
+
+              // Feedback anzeigen
+              const confirmSection = document.getElementById("paymentConfirmationSection");
+              if (confirmSection) {
+                confirmSection.style.background = "linear-gradient(135deg, rgba(6, 78, 59, 0.9), rgba(4, 120, 87, 0.9))";
+                confirmSection.style.borderColor = "#34d399";
+                confirmSection.innerHTML = `
+                  <div style="text-align: center; padding: 10px;">
+                    <div style="font-size: 2.2rem; color: #34d399; margin-bottom: 8px;">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 style="color: #fff; font-size: 1.35rem; margin-bottom: 8px; font-weight: 800;">
+                      Termin verbindlich freigegeben &amp; im Tourenplan garantiert!
+                    </h3>
+                    <div style="font-size: 0.95rem; color: #d1fae5; line-height: 1.6;">
+                      Vielen Dank! Die 50 % Anzahlung (${downpaymentDisplayStr}) wurde vermerkt. Ihr Termin am <strong>${date ? date.replace('T', ' um ') + ' Uhr' : '2026'}</strong> ist nun fest gesichert.<br>
+                      Eine Best&auml;tigung wurde an <strong>${email}</strong> sowie an die Einsatzleitung (<strong>${paypalBusinessEmail}</strong>) &uuml;bermittelt.
+                    </div>
+                  </div>
+                `;
+              }
+            });
+          }
+        }, 100);
+
+        bookingSuccessMsg.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
     });
   }
 
-  // Nordpol Audio Demo Button in Video Section
   const nordpolAudioDemoBtn = document.getElementById('nordpolAudioDemoBtn');
   if (nordpolAudioDemoBtn) {
     nordpolAudioDemoBtn.addEventListener('click', () => {
@@ -7726,6 +8977,7 @@ function initMagicWebsite() {
 
 
 function initBookingCalendar() {
+  const calendarDaysGrid = document.getElementById('calendarDaysGrid');
   const calendarSlotsGrid = document.getElementById('calendarSlotsGrid');
   const calendarDateInput = document.getElementById('calendarDateInput');
   const stepperDayTitle = document.getElementById('stepperDayTitle');
@@ -7736,18 +8988,29 @@ function initBookingCalendar() {
   const calendarSelectionBanner = document.getElementById('calendarSelectionBanner');
   const selectedSlotText = document.getElementById('selectedSlotText');
   const bookDateInput = document.getElementById('bookDate');
+    if (bookDateInput) {
+      bookDateInput.addEventListener("change", (e) => {
+        if (e.target.value) {
+          const val = e.target.value;
+          const dtParts = val.split("T");
+          const dStr = dtParts[0];
+          const tStr = dtParts[1] || "14:30";
+          startReservationTimer(dStr, { start: tStr, label: tStr + " Uhr" });
+        }
+      });
+    }
 
   if (!calendarSlotsGrid) return;
 
-  // 1,5-Stunden-Taktung: Beginn 10:00 Uhr, spätester Termin 20:00 Uhr
+  // Feste 1,5-Stunden-Taktung: Täglich 10:00 Uhr bis 20:00 Uhr (Abstand: 1,5 Std.)
   const standardSlots = [
-    { start: '10:00', end: '11:30', label: '10:00 - 11:30 Uhr', tag: 'Vormittag' },
-    { start: '11:30', end: '13:00', label: '11:30 - 13:00 Uhr', tag: 'Mittag' },
-    { start: '13:00', end: '14:30', label: '13:00 - 14:30 Uhr', tag: 'Früher Nachmittag' },
-    { start: '14:30', end: '16:00', label: '14:30 - 16:00 Uhr', tag: 'Kaffeezeit' },
-    { start: '16:00', end: '17:30', label: '16:00 - 17:30 Uhr', tag: 'Dämmerung & Bescherung' },
-    { start: '17:30', end: '19:00', label: '17:30 - 19:00 Uhr', tag: 'Festlicher Abend' },
-    { start: '19:00', end: '20:30', label: '19:00 - 20:30 Uhr', tag: 'Später Abend' }
+    { start: '10:00', end: '11:30', label: '10:00 – 11:30 Uhr', tag: 'Vormittag' },
+    { start: '11:30', end: '13:00', label: '11:30 – 13:00 Uhr', tag: 'Mittagszeit' },
+    { start: '13:00', end: '14:30', label: '13:00 – 14:30 Uhr', tag: 'Früher Nachmittag' },
+    { start: '14:30', end: '16:00', label: '14:30 – 16:00 Uhr', tag: 'Kaffee & Bescherung' },
+    { start: '16:00', end: '17:30', label: '16:00 – 17:30 Uhr', tag: 'Dämmerung & Bescherung' },
+    { start: '17:30', end: '19:00', label: '17:30 – 19:00 Uhr', tag: 'Festlicher Vorabend' },
+    { start: '19:00', end: '20:30', label: '19:00 – 20:30 Uhr', tag: 'Später Abend' }
   ];
 
   let activeDate = '2026-12-24';
@@ -7766,52 +9029,129 @@ function initBookingCalendar() {
     const mName = months[m];
 
     let specialSuffix = '';
-    if (dateStr === '2026-12-24') specialSuffix = ' (Heiligabend)';
-    else if (dateStr === '2026-12-22') specialSuffix = ' (10:00 - 13:00 Uhr belegt)';
-    else if (dateStr === '2026-12-06') specialSuffix = ' (Nikolaustag - Komplett belegt)';
-    else if (dateStr === '2026-12-05') specialSuffix = ' (Vorabend Nikolaus - Komplett belegt)';
-    else if (dateStr === '2026-12-12') specialSuffix = ' (Samstag vor 3. Advent - Komplett belegt)';
-    else if (dateStr === '2026-12-19') specialSuffix = ' (Samstag vor 4. Advent - Komplett belegt)';
-    else if (dateStr === '2026-12-23') specialSuffix = ' (Vorabend Heiligabend - Komplett belegt)';
-    else if (dateStr === '2026-11-15') specialSuffix = ' (Offizieller Saisonstart)';
+    if (dateStr === '2026-12-24') specialSuffix = ' (⭐ Heiligabend)';
+    else if (dateStr === '2026-12-22') specialSuffix = ' (⚠️ 10:00 - 13:00 Uhr belegt)';
+    else if (dateStr === '2026-12-06') specialSuffix = ' (🎅 Nikolaustag - Ganztägig belegt)';
+    else if (dateStr === '2026-12-05') specialSuffix = ' (🎄 Vorabend Nikolaus - Ganztägig belegt)';
+    else if (dateStr === '2026-12-12') specialSuffix = ' (🔒 Samstag vor 3. Advent - Ganztägig belegt)';
+    else if (dateStr === '2026-12-19') specialSuffix = ' (🔒 Samstag vor 4. Advent - Ganztägig belegt)';
+    else if (dateStr === '2026-12-23') specialSuffix = ' (🔒 Vorabend Heiligabend - Ganztägig belegt)';
+    else if (dateStr === '2026-12-20') specialSuffix = ' (🕯️ 4. Advent)';
+    else if (dateStr === '2026-12-13') specialSuffix = ' (🕯️ 3. Advent)';
+    else if (dateStr === '2026-11-15') specialSuffix = ' (🚀 Saisonstart)';
 
     return `${wName}, ${d}. ${mName} ${y}${specialSuffix}`;
   }
 
   function isSlotBooked(dateStr, slot) {
-    // Regel 1: Am 05.12.2026 komplett ganztägig belegt
+    // Regel 1: 05.12.2026 komplett ganztägig belegt
     if (dateStr === '2026-12-05') {
-      return { booked: true, reason: 'Vorabend Nikolaus: Bereits ganztägig komplett belegt' };
+      return { booked: true, reason: 'Vorabend Nikolaus: Bereits ganztägig komplett ausgebucht' };
     }
-    // Regel 1a: Am 06.12.2026 (Nikolaustag) komplett ganztägig belegt
+    // Regel 1a: 06.12.2026 (Nikolaustag) komplett ganztägig belegt
     if (dateStr === '2026-12-06') {
-      return { booked: true, reason: 'Nikolaustag (06.12.): Bereits ganztägig komplett belegt' };
+      return { booked: true, reason: 'Nikolaustag (06.12.): Bereits ganztägig komplett ausgebucht' };
     }
-    // Regel 1b: Am 12.12.2026 (Samstag vor 3. Advent) komplett ganztägig belegt
+    // Regel 1b: 12.12.2026 (Samstag vor 3. Advent) komplett ganztägig belegt
     if (dateStr === '2026-12-12') {
-      return { booked: true, reason: 'Samstag (vor 3. Advent): Bereits ganztägig komplett belegt' };
+      return { booked: true, reason: 'Samstag (12.12.): Bereits ganztägig komplett ausgebucht' };
     }
-    // Regel 1c: Am 19.12.2026 (Samstag vor 4. Advent) komplett ganztägig belegt
+    // Regel 1c: 19.12.2026 (Samstag vor 4. Advent) komplett ganztägig belegt
     if (dateStr === '2026-12-19') {
-      return { booked: true, reason: 'Samstag (vor 4. Advent): Bereits ganztägig komplett belegt' };
+      return { booked: true, reason: 'Samstag (19.12.): Bereits ganztägig komplett ausgebucht' };
     }
-    // Regel 1d: Am 23.12.2026 (Vorabend Heiligabend) komplett ganztägig belegt
+    // Regel 1d: 23.12.2026 (Vorabend Heiligabend) komplett ganztägig belegt
     if (dateStr === '2026-12-23') {
-      return { booked: true, reason: 'Vorabend Heiligabend: Bereits ganztägig komplett belegt' };
+      return { booked: true, reason: 'Vorabend Heiligabend (23.12.): Ganztägig komplett ausgebucht' };
     }
-    // Regel 2: Am 22.12.2026 (Dienstag) von 10:00 bis 13:00 Uhr belegt
+    // Regel 2: 22.12.2026 (Dienstag) von 10:00 bis 13:00 Uhr belegt
     if (dateStr === '2026-12-22') {
       if (slot.start === '10:00' || slot.start === '11:30' || slot.end <= '13:00') {
         return { booked: true, reason: 'Bereits fest belegt (10:00 - 13:00 Uhr)' };
       }
     }
-    // Regel 3: Am 24.12.2026 ist reserviert ab 18:30 Uhr bis zum Schluss
+    // Regel 3: 24.12.2026 ist reserviert ab 18:30 Uhr bis zum Schluss
     if (dateStr === '2026-12-24') {
-      if (slot.start >= '18:30' || slot.start === '19:00') {
-        return { booked: true, reason: 'Bereits reserviert ab 18:30 Uhr bis Schluss' };
+      if (slot.start >= '18:30' || slot.start === '19:00' || slot.start === '17:30') {
+        if (slot.start === '19:00' || slot.end > '18:30') {
+          return { booked: true, reason: 'Bereits reserviert ab 18:30 Uhr bis Schluss' };
+        }
       }
     }
     return { booked: false };
+  }
+
+  // Grafische Monatsübersicht Dezember 2026 rendern
+  function renderMonthGrid() {
+    if (!calendarDaysGrid) return;
+    calendarDaysGrid.innerHTML = '';
+
+    // Dezember 2026: 01.12.2026 ist ein Dienstag. Mo = leere Zelle
+    const emptyCell = document.createElement('div');
+    emptyCell.className = 'cal-day-cell day-empty';
+    calendarDaysGrid.appendChild(emptyCell);
+
+    for (let day = 1; day <= 24; day++) {
+      const dayStr = day < 10 ? `0${day}` : `${day}`;
+      const fullDateStr = `2026-12-${dayStr}`;
+
+      let dayType = 'day-free';
+      let statusText = '✨ Frei';
+      let eventText = '';
+
+      if (day === 5) {
+        dayType = 'day-booked';
+        statusText = '🔒 Belegt';
+        eventText = 'Vorabend Nikolaus';
+      } else if (day === 6) {
+        dayType = 'day-booked';
+        statusText = '🔒 Belegt';
+        eventText = '🎅 Nikolaustag';
+      } else if (day === 12) {
+        dayType = 'day-booked';
+        statusText = '🔒 Belegt';
+        eventText = 'Vor 3. Advent';
+      } else if (day === 13) {
+        eventText = '🕯️ 3. Advent';
+      } else if (day === 19) {
+        dayType = 'day-booked';
+        statusText = '🔒 Belegt';
+        eventText = 'Vor 4. Advent';
+      } else if (day === 20) {
+        eventText = '🕯️ 4. Advent';
+      } else if (day === 22) {
+        dayType = 'day-partial';
+        statusText = '⚠️ 10-13h belegt';
+        eventText = 'Nachm. frei';
+      } else if (day === 23) {
+        dayType = 'day-booked';
+        statusText = '🔒 Belegt';
+        eventText = 'Vorabend 24.';
+      } else if (day === 24) {
+        dayType = 'day-partial';
+        statusText = '⭐ Heiligabend';
+        eventText = 'Frei bis 18:30';
+      }
+
+      const cell = document.createElement('div');
+      const isActive = (fullDateStr === activeDate);
+      cell.className = `cal-day-cell ${dayType} ${isActive ? 'day-active' : ''}`;
+      cell.setAttribute('data-date', fullDateStr);
+
+      cell.innerHTML = `
+        <div class="cal-day-num">${day}.</div>
+        ${eventText ? `<div class="cal-day-event">${eventText}</div>` : ''}
+        <div class="cal-day-status-pill">${statusText}</div>
+      `;
+
+      cell.addEventListener('click', () => {
+        activeDate = fullDateStr;
+        renderMonthGrid();
+        renderSlots();
+      });
+
+      calendarDaysGrid.appendChild(cell);
+    }
   }
 
   function renderSlots() {
@@ -7842,11 +9182,11 @@ function initBookingCalendar() {
             <div class="slot-time"><i class="fa-solid fa-lock"></i> ${slot.label}</div>
             <span class="slot-duration">1,5 Std.</span>
           </div>
-          <div style="font-size: 0.85rem; color: #fca5a5; margin: 4px 0 10px 0;">
+          <div style="font-size: 0.88rem; color: #fca5a5; margin: 4px 0 10px 0; font-weight: 600;">
             ${bookedStatus.reason}
           </div>
           <div class="slot-status-badge badge-booked">
-            <i class="fa-solid fa-ban"></i> Belegt / Reserviert
+            <i class="fa-solid fa-ban"></i> Bereits belegt &bull; Keine Buchung m&ouml;glich
           </div>
         `;
       } else {
@@ -7855,15 +9195,15 @@ function initBookingCalendar() {
             <div class="slot-time" style="color: #fff;"><i class="fa-solid fa-clock" style="color: var(--color-gold);"></i> ${slot.label}</div>
             <span class="slot-duration">1,5 Std.</span>
           </div>
-          <div style="font-size: 0.85rem; color: #94a3b8; margin: 4px 0 8px 0;">
-            Kategorie: <strong>${slot.tag}</strong>
+          <div style="font-size: 0.88rem; color: #cbd5e1; margin: 4px 0 8px 0;">
+            Kategorie: <strong style="color: var(--color-gold);">${slot.tag}</strong>
           </div>
           <div class="slot-status-badge ${isSelected ? 'badge-selected' : 'badge-free'}">
             <i class="fa-solid ${isSelected ? 'fa-circle-check' : 'fa-check'}"></i> 
-            ${isSelected &bull; 'Ausgewählter Wunschtermin' : 'Freier Termin - Sofort buchbar'}
+            ${isSelected ? 'Ausgewählter Wunschtermin' : 'Freier Termin • Sofort buchbar'}
           </div>
           <button type="button" class="slot-action-btn btn-slot-book">
-            <i class="fa-solid fa-calendar-check"></i> ${isSelected &bull; 'Termin ausgew\u00E4hlt' : 'Diesen Termin reservieren'}
+            <i class="fa-solid fa-calendar-check"></i> ${isSelected ? 'Termin ausgewählt' : 'Diesen 1,5h-Termin reservieren'}
           </button>
         `;
 
@@ -7878,7 +9218,9 @@ function initBookingCalendar() {
 
   function selectSlot(dateStr, slot) {
     activeSelectedSlot = { date: dateStr, slot: slot };
+    if (typeof startReservationTimer === "function") { startReservationTimer(dateStr, slot); }
     renderSlots();
+    renderMonthGrid();
 
     if (calendarSelectionBanner) {
       calendarSelectionBanner.style.display = 'flex';
@@ -7904,6 +9246,7 @@ function initBookingCalendar() {
     calendarDateInput.addEventListener('change', (e) => {
       if (e.target.value) {
         activeDate = e.target.value;
+        renderMonthGrid();
         renderSlots();
       }
     });
@@ -7917,9 +9260,10 @@ function initBookingCalendar() {
       const minD = new Date(2026, 10, 15);
       if (d >= minD) {
         const y = d.getFullYear();
-        const m = String(d.getMonth() + 1).padStart(2, '0');
-        const day = String(d.getDate()).padStart(2, '0');
+        const m = d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : `${d.getMonth() + 1}`;
+        const day = d.getDate() < 10 ? `0${d.getDate()}` : `${d.getDate()}`;
         activeDate = `${y}-${m}-${day}`;
+        renderMonthGrid();
         renderSlots();
       }
     });
@@ -7933,9 +9277,10 @@ function initBookingCalendar() {
       const maxD = new Date(2026, 11, 24);
       if (d <= maxD) {
         const y = d.getFullYear();
-        const m = String(d.getMonth() + 1).padStart(2, '0');
-        const day = String(d.getDate()).padStart(2, '0');
+        const m = d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : `${d.getMonth() + 1}`;
+        const day = d.getDate() < 10 ? `0${d.getDate()}` : `${d.getDate()}`;
         activeDate = `${y}-${m}-${day}`;
+        renderMonthGrid();
         renderSlots();
       }
     });
@@ -7946,13 +9291,16 @@ function initBookingCalendar() {
       const pickedDate = btn.getAttribute('data-date');
       if (pickedDate) {
         activeDate = pickedDate;
+        renderMonthGrid();
         renderSlots();
       }
     });
   });
 
+  renderMonthGrid();
   renderSlots();
 }
+
 
 // Global button click handler for smooth navigation to #reservierungsplan
 document.addEventListener('DOMContentLoaded', () => {
